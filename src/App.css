@@ -1,0 +1,105 @@
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .btn {
+    align-self: center;
+  }
+}
+@media (max-width: 1395px) {
+  .nav_bar,
+  .search_bar,
+  .action_bar {
+    display: none;
+  }
+  .menu_toggle {
+    display: block;
+    position: relative;
+    z-index: 1000;
+  }
+  .menu_toggle .material-symbols-outlined {
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+  }
+  .menu_toggle .parent {
+    position: relative;
+  }
+  .mobile_nav {
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(135deg, #0a1d3a, #102944);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 242, 254, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1001;
+    animation: fadeSlideDown 0.3s ease forwards;
+  }
+  .menu_toggle .parent:hover .mobile_nav {
+    display: block;
+  }
+  .mobile_nav div {
+    padding: 12px 0;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: color 0.3s ease;
+    font-size: 1.05rem;
+    text-align: left;
+  }
+  .mobile_nav div:hover {
+    color: #00f2fe;
+  }
+}
+@media (max-width: 900px) {
+  .compiler-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .compiler-info-box {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 321px){
+  .compiler-video-box img{ 
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 426px){
+  .compiler-video-box img {
+      width: 260px;
+      height: 260px;
+    }
+}
+@media (max-width: 1025px) {
+  .reviews-heading {
+    font-size: 2rem;
+  }
+
+  .review-card {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-section {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .footer-section span {
+    justify-content: center;
+  }
+  .footer-section h4 {
+    margin-top: 20px;
+  }
+}

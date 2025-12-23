@@ -1,17 +1,19 @@
 import React from "react";
-import Header from "./header.jsx";
-import Body from "./Body.jsx";
-import Footer from "./Footer.jsx"
-import "./App.css"
-import "./animations.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import CoursePage from "./pages/CoursePage";
+import "./styles/App.css";
 function App() {
-    return (
-        <>
-            <Header />
-            <Body/>
-            <Footer/>
-        </>
-    );
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/course" element={<CoursePage />} />
+        {/* Optional: catch-all 404 */}
+        <Route path="*" element={<h1>Page Not Found</h1>} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

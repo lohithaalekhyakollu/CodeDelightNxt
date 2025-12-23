@@ -1,10 +1,9 @@
 import React from "react";
-import logo from "./assets/logo.png";
-import "./Logo.css"
+import "../styles/LogoSection.css"
 const logos = () => {
     return (
             <div className="logo-container">
-                <img src={logo} className="logo" alt="logo" />
+                <img src="/images/logo.png" className="logo" alt="logo" />
            </div>
     );
 };

@@ -6,12 +6,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+.webcompiler-container {
   background: #2c2c2c;
   color: #00f2fe;
-}
-
-.webcompiler-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
